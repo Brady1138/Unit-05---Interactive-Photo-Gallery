@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-content: center;
+    overflow-x: hidden;
+}
+
+img {
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
