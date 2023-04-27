@@ -12,19 +12,6 @@ a img {
     pointer-events: all;
 }
 
-h3 {
-    z-index: 2;
-    margin-left: 35%;
-    margin-top: 40%;
-    position: absolute;
-    pointer-events: none;
-    transition: .5s;
-    opacity: 0;
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.25rem;
-}
-
 
 .image {
     overflow: hidden;
@@ -37,36 +24,15 @@ h3 {
 .gallery {
     margin: auto;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 20px 20px;
     max-width: 2000px;
 }
 
-.overlay {
-    z-index: 1;
-    pointer-events: none;
-    position: absolute;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(8, 105, 29);
-    transition: .5s;
-}
-
-.image:hover .overlay {
-    opacity: .5;
-    transition: .5s;
-}
-
 .image:hover img {
     transform: scale(112%);
-    filter: blur(1px);
     transition: .5s;   
-}
-
-.image:hover h3 {
-    opacity: 100%;
 }
 
 
